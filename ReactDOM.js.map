@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/ReactDOM.js"],"names":["ReactDOM"],"mappings":";;;;;;AAAA;;;;;;kBAEeA,kB","file":"ReactDOM.js","sourcesContent":["import ReactDOM from 'react-dom';\n\nexport default ReactDOM;"]}

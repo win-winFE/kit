@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/Fragment.js"],"names":["Fragment"],"mappings":";;;;;;AAAA;;kBAEeA,e","file":"Fragment.js","sourcesContent":["import {Fragment} from 'react';\n\nexport default Fragment;"]}

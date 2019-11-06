@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/React.js"],"names":["React"],"mappings":";;;;;;AAAA;;;;;;kBACeA,e","file":"React.js","sourcesContent":["import React from 'react';\nexport default React;"]}

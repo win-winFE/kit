@@ -1,0 +1,42 @@
+'use strict';
+/**
+ * @api PAGE_SHOW(function) PAGE_SHOW
+ * @apiGroup APP
+ * @apiVersion 1.0.0
+ * @apiParam {function} function 回调函数
+ * @apiDescription 界面重新激活时触发
+ * @apiUse APPNpm
+ * @apiUse APPJs
+ * @apiParamExample {string} 例子
+ * // 主要使用场景
+ * // 1、app 处于 h5 界面 ios 点 home 键返回桌面，重新进入 app 触发 console.log(1)
+ * // 2、h5 通过 JUMP_TO 打开另一个 h5 容器 ，此时退出这个 h5 容器，返回上一个 h5 触发 console.log(1)
+ * PAGE_SHOW(_=>{
+ *  console.log(1)
+ * })
+ * @apiParamExample {string} 返回值
+ * 无
+ **/
+
+/**
+ * todo GLOBAL
+ */
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _config = require('./APP/config');
+
+var name = 'PAGE_SHOW';
+var PAGE_SHOW = function PAGE_SHOW(fn) {
+  if (typeof fn === 'function') {
+    (0, _config.WinJSDec)(function (_) {
+      document.addEventListener('onpageshow', fn);
+    });
+  } else {
+    throw new TypeError('[' + name + '] ' + _config.fnError);
+  }
+};
+exports.default = PAGE_SHOW;
+//# sourceMappingURL=PAGE_SHOW.js.map
